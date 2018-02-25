@@ -47,6 +47,7 @@ a:last-child {
   align-items: center;
   max-width: 960px;
   margin: 0 auto;
+  margin-top: 50px;
 }
 
 .header-wrapper {
@@ -101,10 +102,11 @@ body {
 .outer-portfolio-box {
   display: flex;
   flex-direction: column;
-  height: 900px;
+  height: 100%;
   /* max-width: 650px; */
   background-color: white;
   overflow: 0 auto;
+  padding-bottom: 50px;
 }
 
 /* .puppyImages {
@@ -150,7 +152,7 @@ img {
 section {
   background: white;
   width: 650px;
-  height: 500px;
+  height: 100%;
   /* margin-right: 6px; */
   margin-top: 30px;
 }
@@ -167,13 +169,13 @@ section {
 .sidebar {
   /* border: 1px solid lightgray; */
   background-color: White;
-  width: 270px;
+  /* width: 270px; */
   height: 175px;
   align-items: left;
   /* padding-left: 270px; */
   margin-left: 50px;
   /* display: flex;*/
-  margin-bottom: 300px;
+  margin-bottom: 696px;
   /* justify-content: center; */
   /* flex-direction: column; */
 }
@@ -234,23 +236,17 @@ section {
 } */
 
 .footer {
-  position: fixed;
-  bottom: 0px;
-  left: 480px;
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
-  height: 50px;
   border: 1px solid lightgray;
   color: gray;
   align-items: center;
   display: flex;
   justify-content: center;
+  height: 50px;
 }
 
-/*Below here in the code for the contact page/*
+/*Below here in the code for the contact page*/
 
-* {
+  * {
     box-sizing: border-box;
 }
 
@@ -303,11 +299,48 @@ input[type=submit]:hover {
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media (min-width: 600px) {
     .column, input[type=submit] {
-        width: 100%;
+        /* width: 100%; */
         margin-top: 0;
     }
 }
 
+@media screen and (max-width: 768px) {
+  .content-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    margin-top: 50px;
+    margin-right: 25px;
+    margin-bottom: 145px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio-me {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: center;
+  }
+  .nav {
+    display: flex;
+    justify-content: center;
+  }
+  .navbar-header {
+    display: flex;
+    justify-content: center;
+  }
+}
 
 /* Below here was the css to match the hover-overlay on the Portfolio page */
 
