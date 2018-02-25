@@ -47,7 +47,7 @@ a:last-child {
   align-items: center;
   max-width: 960px;
   margin: 0 auto;
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 
 .header-wrapper {
@@ -64,6 +64,7 @@ a:last-child {
 body {
   background-image: url(../images/bg.png);
   font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  overflow-y:hidden;
 }
 
 /* #about-main {
@@ -153,7 +154,7 @@ body {
 section {
   background: white;
   width: 650px;
-  height: 100%;
+  height: auto;
   /* margin-right: 6px; */
   /* margin-top: 30px; */
 }
@@ -259,6 +260,7 @@ section {
   display: flex;
   justify-content: center;
   height: 50px;
+  margin-top: 55px;
 }
 
 /*Below here in the code for the contact page*/
